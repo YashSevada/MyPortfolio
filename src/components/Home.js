@@ -1,14 +1,23 @@
 import React from 'react'
 import {Grid, Cell, Button} from 'react-mdl'
+import '../App.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedinIn, faStackOverflow, faPython, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { icon } from '@fortawesome/fontawesome-svg-core'
 
 const Home = () => {
     return (
-        <div style={{width: '100%', margin: 'auto'}}>
-             <img src="Images/yash.jpg"  style={{height:'15%',width: '15%', display:'flex', justifyContent:'center', margin:'auto', marginTop:'8%', borderRadius:'100%' }}/>
-            <Grid className="home-grid">
-                <Cell col={12}  style={{display:'flex', justifyContent:'center'}}>
-                    <img src="Images/signature.png"/>
-                </Cell>
+        <div  >
+        <Grid className="home-grid" >
+            <Cell col={12} className="cell">
+                <div className="container">    
+                    <img src="Images/yash.jpg" alt="Avatar" className="image"/>
+                        <div className="middle">
+                                <p className="overlay">Yash Sevada</p>
+                         </div>
+                </div>
+            </Cell>
+        
 
                     <div className="banner-text" >
                         <h1>Student</h1>
@@ -16,8 +25,30 @@ const Home = () => {
                         <p>
                             Web Development | Machine Learning | MERN Stack | Android Development
                         </p>
+                        <div className="home-icons">
+                            <a href="https://github.com/YashSevada" target="_blank">
+                                <span >
+                                    <FontAwesomeIcon icon={faGithub} style={{fontStyle:'#fff'}}/>
+                                </span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yash-sevada-928a92178/" target="_blank">
+                                <span>
+                                    <FontAwesomeIcon icon={faLinkedinIn}/>
+                                </span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <span>
+                                    <FontAwesomeIcon icon={faTwitter}/>
+                                </span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <span>
+                                    <FontAwesomeIcon icon={faInstagram}/>
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                
+                    
             </Grid>
         </div>
     )
