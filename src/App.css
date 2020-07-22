@@ -51,62 +51,28 @@
     position: relative;
     margin: auto;
     max-width: 300px;
+    max-height: 300px;
   }
 
-  .container:hover .overlay {
-    opacity: 1;
-  }
   
   .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    border-radius: 2rem;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    width: 75%;
+    border-radius: 50%;
     height: auto;
   }
   
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    align-items: center;
-  }
-  
-  .container:hover .image {
-    opacity: 0.3;
-  }
-
-  .container:hover .middle {
-    opacity: 1;
-  }
-
-  .cell {
-   width:'50%'; 
-   margin:'auto';
-   display:'flex';
-   justify-content: center;
-  }
 
   .home-icons{
     color: cyan;
     margin: auto;
     text-align: center;
     padding: 1em;
-    margin-bottom: 0.5em;
   }
   
   .home-icons span{
     color: white;
     font-size:  300%;
     padding: 25px; 
-    
   }
 
   .home-icons a:hover{
@@ -138,7 +104,6 @@
 
 
 .contact-main{
-  
   width: 100%;
   position: fixed;
   height: 100%;

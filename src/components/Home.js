@@ -7,14 +7,11 @@ import { icon } from '@fortawesome/fontawesome-svg-core'
 
 const Home = () => {
     return (
-        <div  >
+        <div>
         <Grid className="home-grid" >
             <Cell col={12} className="cell">
                 <div className="container">    
                     <img src="Images/yash.jpg" alt="Avatar" className="image"/>
-                        <div className="middle">
-                                <p className="overlay">Yash Sevada</p>
-                         </div>
                 </div>
             </Cell>
         
@@ -28,7 +25,7 @@ const Home = () => {
                         <div className="home-icons">
                             <a href="https://github.com/YashSevada" target="_blank">
                                 <span >
-                                    <FontAwesomeIcon icon={faGithub} style={{fontStyle:'#fff'}}/>
+                                    <FontAwesomeIcon icon={faGithub} />
                                 </span>
                             </a>
                             <a href="https://www.linkedin.com/in/yash-sevada-928a92178/" target="_blank">
